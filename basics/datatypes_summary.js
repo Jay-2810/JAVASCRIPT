@@ -31,3 +31,22 @@ const myFunction=function(){
 
 console.log(typeof (myObj));
 console.log(typeof (myFunction));
+
+//******Memory******//
+// Stack(primitive) Heap(non-primitive)
+
+let name1="Jay";
+let name2=name1;
+console.log(name1,name2);
+name2="Patel"
+console.log(name1,name2);
+
+let userone={
+    mail: "userone@gmail.com",
+    name: "user1"
+}
+
+let usertwo=userone;
+usertwo.mail="usertwo@gmail.com";
+console.log(userone.mail);
+console.log(usertwo.mail);
