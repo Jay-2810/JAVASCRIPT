@@ -18,3 +18,5 @@ let city
 console.table([name,age,isTrue])
 console.log(typeof add) // null is object
 console.log(typeof city)
+// also we can check type using below format
+console.log(typeof "JAY")
