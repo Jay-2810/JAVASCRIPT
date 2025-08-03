@@ -51,7 +51,7 @@ console.log(true);
 console.log(+true);
 console.log(+false);
 
-// Last ae have postfix and prefix ops.
+// Last we have postfix and prefix ops.
 let age=18;
 console.log(age++);
 console.log(++age);
