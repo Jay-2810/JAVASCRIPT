@@ -64,3 +64,16 @@ console.log(Object.values(tinderuser));
 console.log(Object.entries(tinderuser));
 // if we check that object have a property like this name if exist return true else false 
 console.log(tinderuser.hasOwnProperty('logged'));
+
+const course={
+    coursename: "spoken english",
+    prise: "10000",
+    courseInstructor: "Manjumaal"
+}
+// if we want to use value of courseInstructor than every time we have to write
+// course.courseInstructor
+
+const {courseInstructor:Instructor}=course;
+
+// console.log(courseInstructor);
+console.log(Instructor);
