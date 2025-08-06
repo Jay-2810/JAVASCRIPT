@@ -28,7 +28,6 @@ const name="    jay    ";
 const newname=name.trim();
 console.log(name);
 console.log(newname);
-
 const url="https:/abc/jay_2810/%20github";
 // replace function simply replace first argument to second argument in a string
 console.log(url.replace('%20','-'));

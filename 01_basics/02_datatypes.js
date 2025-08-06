@@ -10,7 +10,7 @@ let city
 // bigint
 // string=""
 // null=> standalone value
-// undefined=> undefined don't have eny type
+// undefined=> undefined don't have any type
 // symbol=> unique
 // object=> null is a object
 

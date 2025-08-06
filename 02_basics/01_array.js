@@ -28,7 +28,7 @@ console.log(typeof(nums2));
 // slice and splice
 // In slice, it return copy of the portion of array from start ind to end-1 ind
 // In splice, it return portion of array from start ind to end+1 ind and remove that portion from the original array
-
+// Also, we can use splice for insert the elements
 const slicenNum=nums.slice(2,5);
 console.log("Original ",nums);
 console.log("Slice ",slicenNum);
@@ -36,12 +36,12 @@ console.log("Slice ",slicenNum);
 const spliceNum=nums.splice(2,3);
 console.log("Original ",nums);
 console.log("Splice ",spliceNum);
-
-// Insert at ind 2...second argument 0 means it insert the elements
+console.log("Original ",nums);
+// Insert at ind 2...second argument 0 means it insert the element
 nums.splice(2,0,2,3,4);
 console.log(nums);
 
-// Replace elements
+// Replace elements...second argument 1 means it replace the element
 nums.splice(1,1,-1);
 console.log(nums);
 nums[1]=1;

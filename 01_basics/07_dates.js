@@ -9,7 +9,7 @@ console.log(mydate.toJSON());
 console.log(mydate.toLocaleDateString());
 console.log(mydate.toLocaleString());
 console.log(mydate.toTimeString());
-// In JS Month will start at 0.
+// In JS, Month will start at 0.
 let myNewDate=new Date(2025,10,18,12,5);// it will give you what date you want
 console.log(myNewDate.toLocaleDateString());
 console.log(myNewDate.toLocaleTimeString());
