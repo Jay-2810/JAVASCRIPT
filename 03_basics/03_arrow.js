@@ -38,7 +38,11 @@ const addTwo=(num1,num2)=>{
 }
 console.log(addTwo(2,3));
 // Implicit return
+// below 2 syntex we don't want to use return keyword
 const addTwo_1=(num1,num2)=> num1+num2;
 console.log(addTwo_1(3,3));
 const addTwo_2=(num1,num2)=> (num1+num2);
 console.log(addTwo_2(4,3));
+
+// If we want to return the value than if their exsits {} than 
+// we have to use return keyword
