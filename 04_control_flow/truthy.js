@@ -23,7 +23,9 @@ if(Object.keys(obj).length===0){
 // Nullish Coalescing Operator (??): null undefined
 let val1;
 // val1=5??10;
+// if value is null than assign 10 for below example
 // val1=null ?? 10;
+// if value is undefined than assign 15 for below example
 val1=undefined ?? 15;
 console.log(val1);
 
