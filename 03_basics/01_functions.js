@@ -26,12 +26,12 @@ console.log(loginuser("Jay"));
 console.log(loginuser());
 
 // IF statement
-function loginuser_1(username="Jay"){
+function loginuser_1(username){
     if(username === undefined){// if(!username)
         console.log("Enter a username");
         return;
     }
     return `${username} just logged In`;
 }
-console.log(loginuser());
+console.log(loginuser_1());
 // if we pass any name than it will override JAY
