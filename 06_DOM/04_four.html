@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM remove-add-edit</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lanName){
+        const li=document.createElement('li');
+        li.innerHTML=`${lanName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("C++");
+    addLanguage("SQL");
+    // below code for add language is optimal from above
+    // because above code use innerHtml, it will first fetch the text and 
+    // for this fetching we need to traverse entire tree or object
+    // while below code simply add new node of text and append it
+    function addOptiLanguage(langaugeName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langaugeName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLanguage('golang');
+
+    // Edit
+    const secondLan=document.querySelector("li:nth-child(2)");
+    // below code only replace or overwrite text of that li
+    // secondLan.innerHTML="ReactJS";
+    // below code replace entire li to newli
+    const newli=document.createElement('li');
+    newli.textContent="MongoDB";
+    secondLan.replaceWith(newli);
+
+    // edit
+    const firstLan=document.querySelector("li:nth-child(1)");
+    firstLan.outerHTML='<li>TypeScript</li>';
+
+    // remove
+    const lastLan=document.querySelector("li:last-child");
+    lastLan.remove();
+</script>
+</html>
