@@ -1,11 +1,11 @@
 const coding=['js','c++','c','sql'];
 
-// function in for each loop
+// function in forEach loop
 coding.forEach(function (item){
     // console.log(item);
 })
 
-// arrow function in for each loop
+// arrow function in forEach loop
 coding.forEach((item)=>{
     // console.log(item);
 })
